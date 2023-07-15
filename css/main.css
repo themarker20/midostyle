@@ -39,7 +39,7 @@ nav .container {
 }
 
 nav .container .social {
-  font-size: 22px;
+  font-size: 20px;
   width: 25%;
   display: flex;
   align-items: center;
@@ -163,11 +163,11 @@ section.home .container .btn:hover::after {
   }
 
   nav .container .social {
-    width: 50%;
+    width: 45%;
   }
 
   nav .container .name {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
   }
 
@@ -379,6 +379,7 @@ section.contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
   gap: 40px;
 }
 
@@ -452,13 +453,17 @@ section.contact .text h3 {
     align-self: center;
     padding: 12px 100px;
   }
+
+  section.contact .text {
+    width: 90%
+  }
 }
 
 /* End Contact */
 
 /* Footer */
 footer {
-  padding: 2% 0;
+  padding: 5% 0;
   background-color: rgb(65, 119, 221);
 }
 
@@ -502,7 +507,7 @@ footer .copy {
 @media screen and (max-width: 786px) {
   footer .container {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 
   footer .container .social {
@@ -520,4 +525,27 @@ footer .copy {
   50% {
     color: #fff;
   }
+}
+
+
+/* Fix Width in Small Screen */
+@media screen and (max-width: 480px) {
+
+  /* section.home,
+  section.designs,
+  section.location,
+  section.contact,
+  footer {
+    width: 100%;
+  } */
+
+
+  nav {
+    width: 100vw;
+  }
+
+  section.designs h2 {
+    margin: 10% 0;
+  }
+
 }
