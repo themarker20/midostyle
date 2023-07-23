@@ -15,6 +15,19 @@ a {
   text-decoration: none;
 }
 
+/* Scroll to top Arrow */
+.to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(230, 29, 62);
+  padding: 8px 11px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
 nav {
   width: 100%;
   background-color: rgb(65, 119, 221);
@@ -171,6 +184,10 @@ section.home .container .btn:hover::after {
     font-weight: 900;
   }
 
+  section.home {
+    background-position: center center;
+  }
+
   section.home .container h1 {
     font-size: 60px;
   }
@@ -190,6 +207,7 @@ section.designs h2 {
   text-align: center;
   font-weight: 500;
   position: relative;
+  margin-bottom: 60px;
 }
 
 section.designs h2::before {
