@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+  background-image: url(../images/icon/icon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.514);
+  z-index: -1;
+}
+
+.sign {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 12px 17px;
+  width: 100%;
+  outline: none;
+  border: none;
+
+}
+
+form button {
+  background-color: #fff;
+  color: gray;
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+button.valid {
+  background-color: gray;
+  color: #fff;
+}
+
+button.valid::before {
+  content: "الرجاء كتابة المعلومات بشكل صحيح للدخول";
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  top: -90%;
+  right: -100%;
+  background-color: rgb(226, 47, 47);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}

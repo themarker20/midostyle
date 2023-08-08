@@ -201,6 +201,7 @@ section.home .container .btn:hover::after {
 /* End Responsive */
 section.designs {
   padding: 4% 0;
+  height: auto;
 }
 
 section.designs h2 {
@@ -566,4 +567,41 @@ footer .copy {
     margin: 10% 0;
   }
 
+}
+
+/* Edit New System Form  btn*/
+.sign-to-factory {
+  padding: 5% 0;
+  background-color: #361a1a;
+  text-align: center;
+}
+
+.sign-to-factory h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.sign-to-factory a {
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 6px;
+  padding: 2% 4%;
+  text-decoration: none;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-to-factory a span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sign-to-factory a img {
+  width: 50%;
+  border-radius: 6px;
 }
